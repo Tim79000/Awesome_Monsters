@@ -1,1 +1,2 @@
 Make jelly and murcery hit box smaller.
+Make frostbiter able to freeze you.
