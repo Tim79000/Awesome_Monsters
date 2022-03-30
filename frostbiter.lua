@@ -1,4 +1,4 @@
-mobs:register_mob("awesome_monsters:mummy", {
+mobs:register_mob("awesome_monsters:frostbiter", {
 	type = "monster",
 	passive = false,
 	attack_type = "dogfight",
@@ -11,9 +11,9 @@ mobs:register_mob("awesome_monsters:mummy", {
 	visual = "mesh",
 	mesh = "character.b3d",
 	textures = {
-		{"awesome_monsters_mummy.png"},
+		{"awesome_monsters_frostbiter.png"},
 	},
-	blood_texture = "default_paper.png",
+	blood_texture = "default_ice.png",
 	makes_footstep_sound = true,
 	sounds = {
 		random = "awesome_monsters_groan",
@@ -24,7 +24,7 @@ mobs:register_mob("awesome_monsters:mummy", {
 	view_range = 15,
 	floats = 1,
 	drops = {
-		{name = "default:paper", chance = 3, min = 3, max = 5},
+		{name = "default:ice", chance = 3, min = 1, max = 3},
 	},
 	water_damage = 0,
 	lava_damage = 0,
@@ -50,8 +50,8 @@ mobs:register_mob("awesome_monsters:mummy", {
 })
 
 mobs:spawn({
-	name = "awesome_monsters:mummy",
-	nodes = {"default:desert_sand", "default:desert_stone"},
+	name = "awesome_monsters:frostbiter",
+	nodes = {"default:cave_ice", "default:snowblock"},
 	min_light = 0,
 	max_light = 15,
 	chance = 3000,

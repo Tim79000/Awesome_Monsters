@@ -92,11 +92,12 @@ mobs:register_mob("awesome_monsters:mercury", {
 
 mobs:spawn({
 	name = "awesome_monsters:mercury",
-	nodes = {"default:silver_sand", "default:silver_sandstone"},
+	nodes = {"default:stone", "default:gravel"},
 	min_light = 0,
 	max_light = 15,
-	chance = 3000,
+	chance = 5000,
 	active_object_count = 3,
-	min_height = 0,
-	day_toggle = true,
+	min_height = -31000,
+	max_height = 0,
+	day_toggle = false,
 })
